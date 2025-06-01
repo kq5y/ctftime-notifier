@@ -5,6 +5,10 @@ Retrieve new or one-day-away CTFs from CTFtime.org and announce them in the disc
 ## Usage
 
 ```bash
+echo '{}' > app/state.json
+```
+
+```bash
 docker build -t ctf-notify .
 docker run -d \
   --restart unless-stopped \
