@@ -83,7 +83,6 @@ def build_event_embed(entry, title: str, link: str, start_local: str | None, fin
     # raw_desc = entry.get("description", "")
     # desc_text = strip_html_tags(raw_desc)
     fmt = entry.get("format_text", "N/A")
-    print(entry)
     onsite = entry.get("onsite", "False").lower() == "true"
     if onsite:
         loc = entry.get("location", "")
