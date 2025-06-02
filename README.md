@@ -9,7 +9,6 @@ echo '{}' > app/state.json
 ```
 
 ```bash
-```bash
 docker build -t ctftime-notifier .
 docker run -d \
   --name ctftime-notifier \
